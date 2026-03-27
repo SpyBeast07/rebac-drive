@@ -1,0 +1,16 @@
+model
+  schema 1.1
+
+type user
+
+type folder
+  relations
+    define owner: [user]
+    define parent: [folder]
+    define viewer: [user] or owner or viewer from parent
+
+type file
+  relations
+    define owner: [user]
+    define parent: [folder]
+    define viewer: [user] or owner or viewer from parent

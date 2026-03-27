@@ -7,3 +7,4 @@ python-dotenv
 openfga-sdk
 httpx
 python-multipart
+watchdog
